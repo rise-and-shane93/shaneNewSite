@@ -74,6 +74,11 @@ function photoway_scripts(){
 			'absolute' => true,
 		),
 		array(
+			'handler'  => 'custom-styles',
+			'style'    => get_theme_file_uri( '/assets/css/custom-styles.css' ),
+			'absolute' => true,
+		),
+		array(
 			'handler'  => 'photoway-skip-link-focus-fix',
 			'script'   => get_theme_file_uri( '/assets/js/skip-link-focus-fix.min.js' ),
 			'absolute' => true,
@@ -84,6 +89,11 @@ function photoway_scripts(){
 			'absolute'   => true,
 			'prefix'     => '',
 			'dependency' => array( 'jquery', 'masonry' )
+		),
+		array(
+			'handler'  => 'custom-scripts',
+			'script'   => get_theme_file_uri( '/assets/js/custom-scripts.js' ),
+			'absolute' => true,
 		),
 		$style
 	);
